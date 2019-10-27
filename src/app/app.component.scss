@@ -1,0 +1,70 @@
+body {
+    overflow: hidden;
+}
+
+.toolbar {
+    height: 60px;
+    margin: -8px;
+    display: flex;
+    align-items: center;
+    background-color: #1976d2;
+    color: white;
+    font-weight: 600;
+}
+
+.toolbar img {
+    margin: 0 16px;
+}
+
+.content {
+    display: flex;
+    margin: 32px auto;
+    padding: 0 16px;
+    max-width: 960px;
+    flex-direction: column;
+    align-items: center;
+
+    .card-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 16px;
+    }
+    
+    .ip-search-key {
+        width: unset;
+        float: left;
+    }
+    
+    .btn-submit {
+        margin-left: 10px;
+    }
+    
+    .my-table {
+        th {
+            width: 100px;
+            text-align: center;
+            font-size: 16px;
+            position: relative;
+
+            .sp-sort {
+                position: absolute;
+                font-size: 20px;
+                top: 11px;
+            }
+
+            &.th-price:hover {
+                cursor: pointer;
+            }
+        }
+
+        tr {
+            td {
+                a:hover {
+                    cursor: pointer;
+                }
+                text-align: center;
+            }
+        }
+    }
+}
